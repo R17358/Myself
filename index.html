@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <style>
+      h2{
+        color:red;
+        text-align:center;
+      }
+      p{
+        color:blue;
+        
+      }
+     #nam{
+      color:brown;
+       text-align:center;
+       font-family:courier;
+     }
+     #sal{
+      color:brown;
+       text-align:center;
+       font-family:courier;
+     }
+     #boy{
+      color:brown;
+       text-align:center;
+       font-family:courier;
+     }
+      button{
+        border-radius:6px;
+        background-color:red;
+        color:white;
+      }
+      #my{
+        color:blue;
+        font-family:cursive;
+      }
+
+    </style>
+    <script>
+      function myself()
+        {
+      let name,age,gen;
+      name = document.getElementById('nam').value;
+      age = document.getElementById('sal').value;
+      gen = document.getElementById('boy').value;
+     document.getElementById('my').innerHTML = "My Name is "+name+"."+" I am a "+gen+" I am "+age+" years old ";
+        }
+    </script>
+  </head>
+  <body>
+    <h2>MYSELF</h2>
+    <p>Enter Name:<input type="text"id="nam"> </p>
+    <p>Enter Age:<input type="number"id="sal"> </p>
+    <p>Enter gender:<input type="text"id="boy"> </p>
+    <button onClick="myself()">Myself</button>
+    <br><br>
+<div id="my">
+
+</div>
+  </body>
+</html>
